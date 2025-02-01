@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(245, 245, 245);
+    padding: 20px;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.container {
+    background-color: white;
+    padding: 20px; /* the gap with the container*/
+    box-shadow: 0 0 20px rgb(0,0,0, 0.2); /* first is horizontal, and then vertical and then the blur effect */
+    max-width: 600px; /* Set widht of the container */
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 36px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 4px;
+    width: 100%;
+    max-width: 300px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 11px;
+    border-radius: 8px ;
+    width: 50%;
+    max-width: 130px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0062cc;
+  }
+
+#result {
+margin-top: 20px;
+font-size: 24px;
+font-weight: bold;
+}
