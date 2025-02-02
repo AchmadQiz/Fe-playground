@@ -1,60 +1,59 @@
 body {
-    margin: 0;
-    font-family: sans-serif;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Moraine_Lake_17092005.jpg/800px-Moraine_Lake_17092005.jpg');
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
     justify-content: center;
-    background: url("https://images.unsplash.com/photo-1499002238440-d264edd596ec?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80");
+    height: 100vh;
+    align-items: center;
+    margin: 0;
     background-size: cover;
+    flex-direction: column;
     overflow: hidden;
-  }
-  
-  h2 {
-    text-transform: uppercase;
-    letter-spacing: 4px;
-    font-size: 14px;
-    text-align: center;
+
+}
+
+h3 {
     color: white;
-  }
-  
-  .clock {
+    letter-spacing: 4px;
+    text-align: center;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.clock-container {
     display: flex;
-  }
-  
-  .clock div {
-    margin: 5px;
+}
+
+.clock-container div {
     position: relative;
-  }
-  
-  .clock span {
+    margin: 5px;
+}
+
+.clock-container span {
     width: 100px;
     height: 80px;
-    background: slateblue;
+    background-color:slateblue;
     opacity: 0.8;
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     font-size: 50px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  }
-  
-  .clock .text {
-    height: 30px;
+}
+
+.clock-container .text {
     font-size: 10px;
+    height: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    background: darkblue;
-    opacity: 0.8;
-  }
-  
-  .clock #ampm {
+    background-color: rgb(53, 13, 162);
+}
+
+.clock-container .ampm {
+    font-size: 20px;
+    height: 30px;
+    width: 60px;
     bottom: 0;
     position: absolute;
-    width: 60px;
-    height: 30px;
-    font-size: 20px;
     background: green;
-  }
+}

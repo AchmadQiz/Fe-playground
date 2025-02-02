@@ -1,30 +1,29 @@
-const hourEl = document.getElementById("hour");
-const minuteEl = document.getElementById("minutes");
-const secondEl = document.getElementById("seconds");
-const ampmEl = document.getElementById("ampm");
+const hourEl = document.getElementById("hour")
+const minuteEl = document.getElementById("minutes")
+const secondEl = document.getElementById("second")
 
 function updateClock() {
-  let h = new Date().getHours();
-  let m = new Date().getMinutes();
-  let s = new Date().getSeconds();
-  let ampm = "AM";
+    let hour = new Date().getHours()
+    let minute = new Date().getMinutes()
+    let second = new Date().getSeconds()
+    let ampm = "AM"
 
-  if (h > 12) {
-    h = h - 12;
-    ampm = "PM";
-  }
+    if (hour > 12) {
+        ampm = "PM"
+    }
 
-  h = h < 10 ? "0" + h : h;
-  m = m < 10 ? "0" + m : m;
-  s = s < 10 ? "0" + s : s;
+    hour = hour < 10 ? "0" + hour: hour
+    minute = minute < 10 ? "0" + minute: minute
+    second = second < 10 ? "0" + second: second
 
-  hourEl.innerText = h;
-  minuteEl.innerText = m;
-  secondEl.innerText = s;
-  ampmEl.innerText = ampm;
-  setTimeout(() => {
-    updateClock();
-  }, 1000);
+    hourEl.innerText = hour
+    minuteEl.innerText = minute
+    secondEl.innerText = second
+    ampm.innerText = ampm
+    setTimeout(() => {
+        updateClock()
+    },1000)
+
 }
 
-updateClock();
+updateClock()
